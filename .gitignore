@@ -1,3 +1,5 @@
+.scala-build
+target
 *.class
 *.log
 

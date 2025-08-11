@@ -1,7 +1,18 @@
 # Scala Native CLI Template
 
-Scala Native CLI Template, with all the usual dependencies included and configured already.
-This is a  [Giter8][g8] template, which integrates beautifully with [sbt][sbt].
+Scala Native CLI Template, with all the usual dependencies included and configured already:
+- Scala 3
+- Scala Native
+- Scala Test
+- Command Parsing
+- Command Autocompletion
+- Config Parsing (TODO)
+- Command Line Prompts (TODO)
+- Example Table Printer
+
+Uses Scala 3 with Scala Native 0.5.8, including Scala
+
+This is a [Giter8][g8] template, which integrates beautifully with [sbt][sbt].
 
 ## Requirements
 
@@ -22,6 +33,20 @@ The template will ask number of questions about desired versions of things, norm
 ```bash
 sbt new spikerlabs/scala-native-cli.g8
 ```
+
+Versions, assumed by default:
+```
+scala_version = 3.3.6
+scala_native_version = 0.5.8
+sbt_version = 1.11.3
+
+scalatest_version = 3.2.19
+
+decline_derive_version = 0.3.1
+decline_completion_version = 0.1.0
+toml_version = 0.3.0
+cue4s_version = 0.0.9
+
 
 ## How to use generated project
 

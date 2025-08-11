@@ -19,5 +19,5 @@ Infrastructure code is reusable and suggested structure is scalable towards comp
 Test, Build and Run:
 ```bash
 sbt clean test compile nativeLink
-./target/$scala_version$/$name$ hello --help
+./target/scala-$scala_version$/$name$ hello --help
 ```

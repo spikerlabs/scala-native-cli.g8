@@ -16,6 +16,10 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: 'sbt'
+    - name: Setup sbt installer
+      uses: sbt/setup-sbt@v1.1.11
+      with:
+        sbt-runner-version: 1.11.3
     - name: Run tests
       run: sbt test
     - name: Upload dependency graph

@@ -1,8 +1,8 @@
 package infrastructure
 
-import net.andimiller.decline.completion.Completion
-import decline_derive.*
 import com.monovore.decline.{Command, Opts}
+import decline_derive.*
+import net.andimiller.decline.completion.Completion
 
 object Autocompletion {
   case class Setup(value: String)

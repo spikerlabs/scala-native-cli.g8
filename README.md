@@ -1,9 +1,7 @@
-# WORK IN PROGRESS - NOT A GITER TEMPLATE YET
-
 # Scala Native CLI Template
 
 Scala Native CLI Template, with all the usual dependencies included and configured already.
-This is a  [Giter8][g8] template, which integrates beatifully with [sbt][sbt].
+This is a  [Giter8][g8] template, which integrates beautifully with [sbt][sbt].
 
 ## Requirements
 

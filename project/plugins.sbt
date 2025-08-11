@@ -1,1 +1,1 @@
-addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.8")
+addSbtPlugin("org.foundweekends.giter8" %% "sbt-giter8" % "0.13.1")

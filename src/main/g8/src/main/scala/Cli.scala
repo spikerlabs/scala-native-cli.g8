@@ -1,8 +1,7 @@
-import decline_derive._
-
-import example._
-import infrastructure._
-import infrastructure.Autocompletion._
+import decline_derive.*
+import example.*
+import infrastructure.*
+import infrastructure.Autocompletion.*
 
 @Name("example-cli") enum CliCommands derives CommandApplication {
   @Help("example greeting by list of names") @Name("hello") case Hello(@Positional("name") maybeNames: Option[List[String]])

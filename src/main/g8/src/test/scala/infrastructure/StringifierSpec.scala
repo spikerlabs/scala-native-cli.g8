@@ -1,7 +1,7 @@
 package infrastructure
 
 import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should._
+import org.scalatest.matchers.should.*
 
 class StringifierSpec extends AnyFlatSpec with Matchers {
 

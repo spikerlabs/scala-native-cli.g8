@@ -1,3 +1,4 @@
+[![Build](https://github.com/spikerlabs/scala-native-cli.g8/actions/workflows/build.yml/badge.svg)](https://github.com/spikerlabs/scala-native-cli.g8/actions/workflows/build.yml)
 # Scala Native CLI Template
 
 Scala Native CLI Template, with all the usual dependencies included and configured already:
@@ -9,10 +10,6 @@ Scala Native CLI Template, with all the usual dependencies included and configur
 - Config Parsing (TODO)
 - Command Line Prompts (TODO)
 - Example Table Printer
-
-Uses Scala 3 with Scala Native 0.5.8, including Scala
-
-This is a [Giter8][g8] template, which integrates beautifully with [sbt][sbt].
 
 ## Requirements
 
@@ -34,20 +31,6 @@ The template will ask number of questions about desired versions of things, norm
 sbt new spikerlabs/scala-native-cli.g8
 ```
 
-Versions, assumed by default:
-```
-scala_version = 3.3.6
-scala_native_version = 0.5.8
-sbt_version = 1.11.3
-
-scalatest_version = 3.2.19
-
-decline_derive_version = 0.3.1
-decline_completion_version = 0.1.0
-toml_version = 0.3.0
-cue4s_version = 0.0.9
-
-
 ## How to use generated project
 
 Infrastructure code is reusable and suggested structure is scalable towards complex real use cases.
@@ -58,5 +41,12 @@ sbt clean test compile nativeLink
 ./target/scala-3.3.6/example-cli hello --help
 ```
 
+## Attribution
+
+This is a [Giter8][g8] template, which integrates beautifully with [sbt][sbt].
+
+It is heavily inspired by Anton Sviridov's talk [Modern Command Line Applications with Scala Native][talk] at Scala User Group London.
+
 [g8]: https://www.foundweekends.org/giter8/
 [sbt]: https://www.scala-sbt.org
+[talk]: https://slides.indoorvivants.com/clis-with-scala-native/#/1

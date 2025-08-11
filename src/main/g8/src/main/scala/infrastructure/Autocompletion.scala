@@ -14,11 +14,11 @@ object Autocompletion {
       s"""output autocompletion script for zsh
         |example setup of the cli with autocompletion setup:
         |
-        |     ${t.command.name} completion zsh > completion.bash && echo "source $$PWD/completion.bash" >> ~/.zshrc
+        |     \${t.command.name} completion zsh > completion.bash && echo "source \$\$PWD/completion.bash" >> ~/.zshrc
         |
-        |you will need make sure the executable is in in $$PATH. If it is not and you are building it from source, you can try:
+        |you will need make sure the executable is in in \$\$PATH. If it is not and you are building it from source, you can try:
         |
-        |     echo "export PATH=\\$$PATH:$$PWD/target/scala-3.3.6" >> ~/.zshrc
+        |     echo "export PATH=\\\$\$PATH:\$\$PWD/target/scala-3.3.6" >> ~/.zshrc
         |
         |""".stripMargin
     )(Opts(Setup(Completion.zshBashcompatCompletion(command))))

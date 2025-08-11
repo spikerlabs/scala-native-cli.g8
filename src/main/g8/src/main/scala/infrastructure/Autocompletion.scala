@@ -18,7 +18,7 @@ object Autocompletion {
         |
         |you will need make sure the executable is in in \$\$PATH. If it is not and you are building it from source, you can try:
         |
-        |     echo "export PATH=\\\$\$PATH:\$\$PWD/target/scala-3.3.6" >> ~/.zshrc
+        |     echo "export PATH=\\\\\$\$PATH:\$\$PWD/target/scala-3.3.6" >> ~/.zshrc
         |
         |""".stripMargin
     )(Opts(Setup(Completion.zshBashcompatCompletion(command))))

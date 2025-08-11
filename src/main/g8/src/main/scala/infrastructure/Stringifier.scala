@@ -4,7 +4,7 @@ class Stringifier() {
   def head(value: String): String =
     value
       .replaceAll("\\_", " ")
-      .replaceAll("([A-Z])", " $1")
+      .replaceAll("([A-Z])", " \$1")
       .replaceAll(" +", " ")
       .split(" ")
       .filter(_.nonEmpty)
